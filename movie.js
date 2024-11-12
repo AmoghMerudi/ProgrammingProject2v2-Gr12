@@ -1,4 +1,4 @@
-class Movie extends VisualElement {
+class Movie extends MovieTitle {
     constructor(title, popularity, revenue) {
         super(popularity, revenue); 
         this.title = title;
@@ -23,19 +23,4 @@ class Movie extends VisualElement {
         textAlign(CENTER, CENTER);
         text(`${this.title} (${this.randomWord})`, x, y);
     }
-
-    // /**
-    //  * Checks if the movie was clicked based on mouse position.
-    //  * @param {Number} mouseX - Mouse X-coordinate.
-    //  * @param {Number} mouseY - Mouse Y-coordinate.
-    //  * @returns {Boolean} True if clicked, false otherwise.
-    //  */
-    // checkClick(mouseX, mouseY) {
-    //     textSize(this.getTextSize());
-    //     const textWidth = textWidth(this.title);
-    //     const textHeight = this.getTextSize();
-    //     const x = mouseX - textWidth / 2;
-    //     const y = mouseY - textHeight / 2;
-    //     return x >= 0 && x <= textWidth && y >= 0 && y <= textHeight;
-    // }
 }

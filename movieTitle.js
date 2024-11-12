@@ -1,5 +1,5 @@
 
-class VisualElement {
+class MovieTitle {
     constructor(popularity, revenue) {
         this.popularity = popularity;
         this.revenue = revenue;
