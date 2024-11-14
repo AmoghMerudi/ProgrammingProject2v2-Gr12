@@ -16,7 +16,7 @@ function loadError() {
 }
 
 function setup() {
-    createCanvas(windowWidth+550, windowHeight);
+    createCanvas(windowWidth*3, windowHeight);
     handleData();
 }
 
@@ -36,7 +36,7 @@ function handleData() {
 function draw() {
     background(123);
 
-    const cols = 3;
+    const cols = 4;
     const colWidth = width / cols;
     const rowHeight = 50;
 
